@@ -1,5 +1,8 @@
 // Copyright 2021 NNTU-CS
 
 int gcd(int a, int b) {
-	return 25;
+	if (b == 0) {
+		return a;
+	}
+	else return gcd(b, b%a);
 }
